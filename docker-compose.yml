@@ -1,0 +1,9 @@
+version: '3'
+services:
+    database:
+        build: .
+        container_name: Mongo_DkrCmps_Test
+        ports:
+            - "8080:8888"
+        volumes:
+                - ~/small_test:/home/jovyan/work
